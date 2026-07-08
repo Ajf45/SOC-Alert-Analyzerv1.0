@@ -1,0 +1,87 @@
+<h2>Threat Summary</h2>
+
+<p>
+The following alert categories were identified during log analysis.
+These represent the most frequently detected suspicious activities.
+</p>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Attack Type</th>
+            <th>Occurrences</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+    {% if alerts %}
+
+        {% for alert, count in alerts.items() %}
+
+        <tr>
+
+            <td>
+
+                {% if alert == "Brute Force" %}
+                    🔓 {{ alert }}
+
+                {% elif alert == "Failed Login" %}
+                    🔑 {{ alert }}
+
+                {% elif alert == "PowerShell Execution" %}
+                    💻 {{ alert }}
+
+                {% elif alert == "RDP Login" %}
+                    🖥️ {{ alert }}
+
+                {% elif alert == "USB Device Connected" %}
+                    🔌 {{ alert }}
+
+                {% elif alert == "Antivirus Disabled" %}
+                    🛑 {{ alert }}
+
+                {% elif alert == "Port Scan" %}
+                    📡 {{ alert }}
+
+                {% elif alert == "Suspicious IP" %}
+                    🌐 {{ alert }}
+
+                {% elif alert == "Admin Login" %}
+                    👤 {{ alert }}
+
+                {% else %}
+                    ⚠️ {{ alert }}
+
+                {% endif %}
+
+            </td>
+
+            <td>{{ count }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+    {% else %}
+
+        <tr>
+
+            <td colspan="2">
+
+                No alerts detected.
+
+            </td>
+
+        </tr>
+
+    {% endif %}
+
+    </tbody>
+
+</table>

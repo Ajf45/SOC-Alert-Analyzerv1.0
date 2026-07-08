@@ -1,0 +1,19 @@
+{% extends "reports/base.html" %}
+
+{% block content %}
+
+<h1>SOC Incident Report</h1>
+
+{% include "reports/summary.html" %}
+
+{% include "reports/severity.html" %}
+
+{% include "reports/alerts.html" %}
+
+{% include "reports/mitre.html" %}
+
+{% include "reports/iocs.html" %}
+
+{% include "reports/recommendations.html" %}
+
+{% endblock %}

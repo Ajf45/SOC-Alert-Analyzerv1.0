@@ -1,0 +1,97 @@
+<h2>Indicators of Compromise (IOCs)</h2>
+
+<p>
+The following indicators were identified during analysis and may require
+additional investigation or monitoring.
+</p>
+
+<!-- Source IPs -->
+
+<h3>🌐 Suspicious Source IPs</h3>
+
+{% if iocs.ips %}
+
+<ul>
+
+{% for ip in iocs.ips %}
+
+<li>{{ ip }}</li>
+
+{% endfor %}
+
+</ul>
+
+{% else %}
+
+<p>No suspicious IP addresses detected.</p>
+
+{% endif %}
+
+
+<!-- Users -->
+
+<h3>👤 Affected Users</h3>
+
+{% if iocs.users %}
+
+<ul>
+
+{% for user in iocs.users %}
+
+<li>{{ user }}</li>
+
+{% endfor %}
+
+</ul>
+
+{% else %}
+
+<p>No affected users found.</p>
+
+{% endif %}
+
+
+<!-- Alert Types -->
+
+<h3>🚨 Detected Alert Types</h3>
+
+{% if iocs.alerts %}
+
+<ul>
+
+{% for alert in iocs.alerts %}
+
+<li>{{ alert }}</li>
+
+{% endfor %}
+
+</ul>
+
+{% else %}
+
+<p>No alerts detected.</p>
+
+{% endif %}
+
+
+<!-- MITRE Techniques -->
+
+<h3>🛡️ MITRE Techniques Observed</h3>
+
+{% if iocs.techniques %}
+
+<ul>
+
+{% for technique in iocs.techniques %}
+
+<li>{{ technique }}</li>
+
+{% endfor %}
+
+</ul>
+
+{% else %}
+
+<p>No MITRE techniques mapped.</p>
+
+{% endif %}

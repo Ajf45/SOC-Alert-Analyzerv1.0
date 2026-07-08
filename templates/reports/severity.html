@@ -1,0 +1,63 @@
+<h2>Severity Distribution</h2>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>Severity</th>
+
+            <th>Number of Alerts</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        {% if severity %}
+
+            {% for level, count in severity.items() %}
+
+            <tr>
+
+                <td>
+
+                    {% if level == "Critical" %}
+                        🔴 {{ level }}
+                    {% elif level == "High" %}
+                        🟠 {{ level }}
+                    {% elif level == "Medium" %}
+                        🟡 {{ level }}
+                    {% elif level == "Low" %}
+                        🟢 {{ level }}
+                    {% else %}
+                        {{ level }}
+                    {% endif %}
+
+                </td>
+
+                <td>{{ count }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        {% else %}
+
+            <tr>
+
+                <td colspan="2">
+
+                    No severity data available.
+
+                </td>
+
+            </tr>
+
+        {% endif %}
+
+    </tbody>
+
+</table>

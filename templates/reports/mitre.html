@@ -1,0 +1,63 @@
+<h2>MITRE ATT&CK Mapping</h2>
+
+<p>
+The following security events were mapped to the MITRE ATT&CK framework
+to help identify the adversary techniques and tactics observed during
+analysis.
+</p>
+
+<table>
+
+    <thead>
+
+        <tr>
+
+            <th>MITRE ID</th>
+            <th>Technique</th>
+            <th>Tactic</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+    {% if mitre %}
+
+        {% for item in mitre %}
+
+        <tr>
+
+            <td>
+                <strong>{{ item["MITRE ID"] }}</strong>
+            </td>
+
+            <td>
+                {{ item["Technique"] }}
+            </td>
+
+            <td>
+                {{ item["Tactic"] }}
+            </td>
+
+        </tr>
+
+        {% endfor %}
+
+    {% else %}
+
+        <tr>
+
+            <td colspan="3">
+
+                No MITRE ATT&CK mappings available.
+
+            </td>
+
+        </tr>
+
+    {% endif %}
+
+    </tbody>
+
+</table>

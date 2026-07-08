@@ -1,0 +1,32 @@
+<h2>Security Recommendations</h2>
+
+<p>
+The following recommendations are based on the detected security events
+and the calculated overall risk level.
+</p>
+
+{% if recommendations %}
+
+<ol>
+
+{% for item in recommendations %}
+
+<li>
+
+{{ item }}
+
+</li>
+
+{% endfor %}
+
+</ol>
+
+{% else %}
+
+<p>
+
+No additional recommendations at this time.
+
+</p>
+
+{% endif %}
