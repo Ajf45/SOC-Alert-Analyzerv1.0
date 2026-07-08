@@ -1,0 +1,20 @@
+[
+  {
+    "Timestamp":"2026-07-07 11:00:00",
+    "User":"Alice",
+    "SourceIP":"10.0.0.5",
+    "Event":"Failed Login"
+  },
+  {
+    "Timestamp":"2026-07-07 11:01:00",
+    "User":"Alice",
+    "SourceIP":"10.0.0.5",
+    "Event":"PowerShell Execution"
+  },
+  {
+    "Timestamp":"2026-07-07 11:03:00",
+    "User":"Alice",
+    "SourceIP":"10.0.0.5",
+    "Event":"Antivirus Disabled"
+  }
+]

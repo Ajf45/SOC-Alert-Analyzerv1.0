@@ -1,0 +1,13 @@
+Timestamp,User,SourceIP,Event
+2026-07-07 09:00:00,John,192.168.1.20,Login Success
+2026-07-07 09:01:00,John,192.168.1.20,Failed Login
+2026-07-07 09:02:00,John,192.168.1.20,Failed Login
+2026-07-07 09:03:00,John,192.168.1.20,Failed Login
+2026-07-07 09:04:00,John,192.168.1.20,Failed Login
+2026-07-07 09:05:00,John,192.168.1.20,Failed Login
+2026-07-07 09:10:00,Alice,10.0.0.5,PowerShell Execution
+2026-07-07 09:15:00,Alice,10.0.0.5,Antivirus Disabled
+2026-07-07 09:20:00,Bob,192.168.1.30,RDP Login
+2026-07-07 09:25:00,Charlie,192.168.1.35,USB Device Connected
+2026-07-07 09:30:00,Admin,203.0.113.10,Admin Login
+2026-07-07 09:35:00,Eve,192.168.1.45,Port Scan
