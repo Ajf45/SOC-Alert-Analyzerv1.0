@@ -10,7 +10,6 @@ MITRE ATT&CK mapping
 Risk scoring
 Interactive Streamlit dashboard
 HTML report generation
-PDF report generation
 Architecture
 
 Include the architecture diagram image.
@@ -20,7 +19,7 @@ Screenshots
 Embed all screenshots.
 
 Installation
-git clone https://github.com/Ajf45/SOC_Alert_Analyzer.git
+git clone https://github.com/Ajf45/SOC_Alert_Analyzerv1.0.git
 
 cd SOC_Alert_Analyzer
 
