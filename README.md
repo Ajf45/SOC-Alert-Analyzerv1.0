@@ -1,4 +1,4 @@
-# SOC Alert Analyzer
+# SOC Alert Analyzerv1.0
 
 A rule-based Security Operations Center (SOC) alert analysis platform that ingests security logs, enriches alerts with threat intelligence context, maps activity to the MITRE ATT&CK framework, and generates analyst-ready incident reports.
 
